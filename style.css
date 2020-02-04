@@ -1,0 +1,237 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @font-face{
+      font-family: 'Ubuntu';
+      src: url('/fonts/UbuntuCondensed-Regular.ttf');
+  }
+  @font-face{
+    font-family: 'Greatvibes';
+    src: url('/fonts/GreatVibes-Regular.ttf');
+}
+@font-face{
+    font-family: 'Quicksand-medium';
+    src: url('/fonts/Quicksand-Medium.ttf');
+}
+
+  html {
+    font-size: 62.5%;
+    --header1: calc(2rem + 1vw);
+    --header2: calc(3.5rem + 1vw);
+    --header3: calc(3rem + 1vw);
+    --header4: calc(2.4rem + 1vw);
+    --text: calc(1.5rem + 1vw);
+    --big: calc(2.4rem + 1vw);
+    --special-color: #906272;
+    --background-color: #414141;
+    --grey-text: #681414;
+  }
+
+  
+  
+  h1 {
+    font-size: var(--header1);
+  }
+  li,
+  button,
+  label,
+  input,
+  p {
+    font-size: var(--text);
+  }
+  h2 {
+    font-size: var(--header2);
+  }
+  h3 {
+    font-size: var(--header3);
+    font-weight: normal;
+  }
+  h4,
+  h5 {
+    font-size: var(--header4);
+  }
+
+
+  ul{
+      list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: black
+    ;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    body{
+    font-family: "Ubuntu", sans-serif;
+    }
+    h1{
+    font-family: "Greatvibes", sans-serif;
+    }
+
+/* Nav section */
+.main-head {
+  object-fit: cover;
+}
+nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    padding: 2rem 0rem 0rem;
+}
+#logo{
+    flex: 1 1 20rem;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    flex: 0.5 0.5 20rem;
+}
+/*Automatic slideshow*/
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+  }
+  
+  body { margin: 0; } 
+  div#slider { overflow: hidden; }
+  div#slider figure img { width: 20%; float: left; }
+  div#slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite; 
+  }
+  /* ABOUT SECTION */
+
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-text {
+  color: white;
+  background: var(--background-color);
+  flex: 2 1 40rem;
+  justify-content: space-around;
+}
+.about-text div {
+  padding: 3rem 8rem;
+}
+.about-text h3 {
+  padding: 2rem 0rem;
+  font-family: "Quicksand-medium";
+}
+.about-text h2 {
+  font-family: "Ubuntu";
+  padding: 4rem;
+}
+.about-image {
+  flex: 1 1 40rem;
+  position: relative;
+}
+.about-image h5 {
+  position: absolute;
+  letter-spacing: 2rem;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact {
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-wrapper {
+  flex: 3 1 40rem;
+}
+.form-wrapper h2 {
+  margin: 5rem 0rem;
+}
+.form-wrapper span {
+  font-size: var(--big);
+  color: var(--special-color);
+}
+.form-wrapper label {
+  display: block;
+}
+.form-wrapper input {
+  display: block;
+  margin: 3rem 0rem;
+  background: var(--background-color);
+  color: white;
+  border: none;
+  padding: 1rem;
+}
+.form-wrapper button {
+  padding: 1rem 8rem;
+  background: var(--special-color);
+  color: white;
+  border: none;
+  width: 100%;
+}
+.contact img {
+  flex: 1 1 40rem;
+}
+
+/*About section */
+.about-text div {
+  padding: 3rem 3rem;
+}
+
+/*FOOTER SECTION */
+footer {
+  background: var(--background-color);
+  color: white;
+  display: flex;
+  padding: 3rem 5%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+footer h4 {
+  flex: 3 1 40rem;
+  font-size: calc(1.4rem + 1vw);
+}
+
+button:focus {
+  background: var(--background-color);
+  color: white;
+}
+input:focus {
+  border: 4px solid rgb(148, 148, 197);
+}
+  
+
+
